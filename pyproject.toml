@@ -1,0 +1,27 @@
+[project]
+name = "langchain-multi-agent-research"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "agnihotri1989", email = "agnihotri.kshitiz@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "langchain>=1.5.2",
+    "langchain-groq>=1.2.1",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+    "streamlit>=1.67.0",
+    "tavily-python>=0.8.5",
+    "trafilatura>=2.4.0",
+]
+
+[project.scripts]
+langchain-multi-agent-research = "langchain_multi_agent_research:main"
+
+[build-system]
+requires = ["uv_build>=0.13.4,<0.14.0"]
+build-backend = "uv_build"
